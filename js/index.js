@@ -1,5 +1,7 @@
-function save() {
-    const name = document.getElementById('name').value;
+document.getElementById('contact-form').addEventListener("click", function(event){
+    event.preventDefault()
+
+        const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const phone = document.getElementById('phone').value
 
@@ -19,4 +21,5 @@ function save() {
 
     document.getElementById('contactResult').innerHTML = newContactParagraph;
 
-}
+});
+
